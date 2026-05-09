@@ -43,16 +43,16 @@ const Home = () => {
             <div style={{ position: 'relative' }}>
                 <div style={{ 
                   background: 'linear-gradient(135deg, #fff 0%, #f0f0f0 100%)', 
-                  padding: '1.5rem', borderRadius: '4rem', 
-                  boxShadow: '0 80px 150px rgba(0,0,0,0.15)',
+                  padding: '1rem', borderRadius: '4rem', 
+                  boxShadow: '0 80px 150px rgba(0,0,0,0.1)',
                   border: '1px solid rgba(0,0,0,0.05)',
                   transform: 'rotate(-2deg)'
                 }}>
-                  <img src={heroImg} alt="Abstract Bridge" style={{ width: '100%', borderRadius: '3rem' }} />
+                  <img src={heroImg} alt="Abstract Bridge" style={{ width: '100%', height: 'auto', maxHeight: '60vh', objectFit: 'contain', borderRadius: '3rem' }} />
                 </div>
-              <div className="main-card" 
+              <div className="main-card desktop-only" 
                 style={{ 
-                  position: 'absolute', top: '-2rem', right: '-1rem', 
+                  position: 'absolute', top: '10%', right: '-2rem', 
                   padding: '1.5rem', background: 'var(--accent-purple)', color: '#fff',
                   borderRadius: '2rem', zIndex: 10
                 }}

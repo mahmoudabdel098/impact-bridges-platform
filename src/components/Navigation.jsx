@@ -17,24 +17,25 @@ export const Navigation = () => {
   return (
     <>
       <header style={{ 
-        position: 'fixed', top: '2rem', left: '2rem', right: '2rem', 
+        position: 'fixed', top: '1.5rem', left: '1.5rem', right: '1.5rem', 
         zIndex: 1000, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        padding: '1rem 2rem', background: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(10px)',
+        padding: '0.75rem 1.5rem', background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(15px)',
         borderRadius: '5rem', border: '1px solid rgba(0,0,0,0.05)',
-        boxShadow: '0 20px 40px rgba(0,0,0,0.02)'
+        boxShadow: '0 20px 40px rgba(0,0,0,0.03)',
+        width: 'calc(100% - 3rem)'
       }}>
-        <div style={{ display: 'flex', gap: '3rem', alignItems: 'center' }}>
-          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <div style={{ fontWeight: 900, fontSize: '1rem', background: '#000', color: '#fff', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>I</div>
-            <span style={{ fontWeight: 800, fontSize: '0.9rem', letterSpacing: '-0.02em', color: '#000' }}>IMPACTBRIDGES</span>
+        <div style={{ display: 'flex', gap: 'clamp(1rem, 3vw, 3rem)', alignItems: 'center', flexShrink: 0 }}>
+          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{ fontWeight: 900, fontSize: '0.9rem', background: '#000', color: '#fff', width: '28px', height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>I</div>
+            <span style={{ fontWeight: 800, fontSize: '0.85rem', letterSpacing: '-0.02em', color: '#000' }}>IMPACTBRIDGES</span>
           </Link>
-          <nav className="desktop-only" style={{ display: 'flex', gap: '2rem' }}>
+          <nav className="desktop-only" style={{ display: 'flex', gap: '1.5rem' }}>
             {links.map(link => (
               <Link 
                 key={link.path} 
                 to={link.path} 
                 className={`nav-btn ${location.pathname === link.path ? 'active' : ''}`}
-                style={{ fontSize: '0.85rem', fontWeight: 700 }}
+                style={{ fontSize: '0.8rem', fontWeight: 700 }}
               >
                 {link.name}
               </Link>
@@ -42,13 +43,13 @@ export const Navigation = () => {
           </nav>
         </div>
         
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-          <Link to="/contacts" className="nav-btn dark" style={{ padding: '0.75rem 2rem' }}>Contact</Link>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexShrink: 0 }}>
+          <Link to="/contacts" className="nav-btn dark" style={{ padding: '0.6rem 1.5rem', fontSize: '0.85rem' }}>Contact</Link>
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.5rem' }}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0.5rem', display: 'flex', alignItems: 'center' }}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </header>
