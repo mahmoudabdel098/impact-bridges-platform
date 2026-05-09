@@ -60,19 +60,19 @@ const Contacts = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', opacity: 0.5 }}>Nome e Azienda</label>
                   <input type="text" placeholder="Es: Mario Rossi, Brand Co." style={{ 
-                    padding: '1.25rem', borderRadius: '1rem', border: '1px solid var(--border-subtle)', background: '#fcfcfc', fontSize: '1rem' 
+                    padding: '1.25rem', borderRadius: '1rem', border: '1px solid var(--border-subtle)', background: 'var(--bg-main)', color: 'var(--text-main)', fontSize: '1rem' 
                   }} />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', opacity: 0.5 }}>Ruolo</label>
                   <input type="text" placeholder="ESG / CSR / HR / Comunicazione" style={{ 
-                    padding: '1.25rem', borderRadius: '1rem', border: '1px solid var(--border-subtle)', background: '#fcfcfc', fontSize: '1rem' 
+                    padding: '1.25rem', borderRadius: '1rem', border: '1px solid var(--border-subtle)', background: 'var(--bg-main)', color: 'var(--text-main)', fontSize: '1rem' 
                   }} />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', opacity: 0.5 }}>Tema Prioritario</label>
                   <select style={{ 
-                    padding: '1.25rem', borderRadius: '1rem', border: '1px solid var(--border-subtle)', background: '#fcfcfc', fontSize: '1rem' 
+                    padding: '1.25rem', borderRadius: '1rem', border: '1px solid var(--border-subtle)', background: 'var(--bg-main)', color: 'var(--text-main)', fontSize: '1rem' 
                   }}>
                     <option>Seleziona un tema...</option>
                     <option>Inclusione Sociale</option>

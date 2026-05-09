@@ -25,7 +25,7 @@ const About = () => {
           
           <div className="grid-2" style={{ marginBottom: '2rem' }}>
             <div className="main-card bg-grid" style={{ padding: '4rem' }}>
-              <div className="pill-number" style={{ marginBottom: '2rem', background: '#000', color: '#fff' }}><Target size={24} /></div>
+              <div className="pill-number" style={{ marginBottom: '2rem', background: 'var(--text-main)', color: 'var(--bg-main)' }}><Target size={24} /></div>
               <h3 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Brasnext S.r.l.</h3>
               <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
                 L'operatore ufficiale con sede a Milano. Rappresenta il braccio operativo del progetto, gestendo la contrattualistica, la logistica e la produzione audiovisiva. Brasnext trasforma la visione in esecuzione tecnica impeccabile, garantendo che ogni partnership sia solida dal punto di vista legale e operativo.
@@ -40,7 +40,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="main-card" style={{ background: '#000', color: '#fff', padding: '6rem 4rem', overflow: 'hidden' }}>
+          <div className="main-card" style={{ background: 'var(--text-main)', color: 'var(--bg-main)', padding: '6rem 4rem', overflow: 'hidden' }}>
              <div className="grid-2" style={{ alignItems: 'center' }}>
                 <div>
                    <div className="pill-number" style={{ marginBottom: '2rem', borderColor: 'rgba(255,255,255,0.2)' }}><Users size={24} /></div>
@@ -62,7 +62,7 @@ const About = () => {
       </section>
 
       {/* THE CHALLENGE - SLIDE 3 & 4 */}
-      <section style={{ background: '#f8f9fb' }}>
+      <section style={{ background: 'var(--bg-main)', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="content-box">
           <div className="grid-2" style={{ alignItems: 'center', gap: '6rem' }}>
              <div>
@@ -71,17 +71,17 @@ const About = () => {
                    Il mercato ESG a Milano è saturo di dati freddi e brochure auto-celebrative. Le aziende hanno bisogno di <strong>storie reali</strong> per coinvolgere gli stakeholder, mentre il Terzo Settore ha bisogno di <strong>risorse e visibilità qualificata</strong>.
                 </p>
                 <div style={{ display: 'flex', gap: '1rem' }}>
-                   <div className="main-card" style={{ background: '#fff', padding: '2rem', flex: 1 }}>
+                   <div className="main-card" style={{ background: 'var(--bg-card)', padding: '2rem', flex: 1 }}>
                       <h4 style={{ fontWeight: 800, marginBottom: '1rem' }}>Problema</h4>
                       <p className="text-muted" style={{ fontSize: '0.9rem' }}>Frammentazione tra profit e non-profit, mancanza di fiducia, narrazione inefficace.</p>
                    </div>
-                   <div className="main-card" style={{ background: '#fff', padding: '2rem', flex: 1 }}>
+                   <div className="main-card" style={{ background: 'var(--bg-card)', padding: '2rem', flex: 1 }}>
                       <h4 style={{ fontWeight: 800, marginBottom: '1rem' }}>Soluzione</h4>
                       <p className="text-muted" style={{ fontSize: '0.9rem' }}>Un intermediario strategico che valida, connette e documenta l'impatto.</p>
                    </div>
                 </div>
              </div>
-             <div className="main-card bg-grid" style={{ padding: '4rem', background: '#fff' }}>
+             <div className="main-card bg-grid" style={{ padding: '4rem', background: 'var(--bg-card)' }}>
                 <h3 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '2rem' }}>Milano Vision 2026</h3>
                 <p className="text-muted" style={{ marginBottom: '2rem' }}>
                    Entro il 2026 vogliamo essere il punto di riferimento per ogni azienda milanese che desidera trasformare il proprio bilancio sociale in un racconto vivo e partecipato.
@@ -120,9 +120,9 @@ const About = () => {
               { q: 'Q3 2026', title: 'Produzione Real', desc: 'Sviluppo dei reportage "on-site" per documentare l\'attivazione dei progetti.' },
               { q: 'Q4 2026', title: 'Impatto Certificato', desc: 'Consegna dell\'Impact Report 2026 e apertura delle candidature per il nuovo anno.' }
             ].map((phase, i) => (
-              <div key={i} className="main-card" style={{ background: '#f8f9fb', border: '1px solid rgba(0,0,0,0.03)' }}>
+              <div key={i} className="main-card" style={{ background: 'var(--bg-main)', border: '1px solid var(--border-subtle)' }}>
                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-                    <div className="pill-number" style={{ background: i === 0 ? 'var(--accent-purple)' : '#000', color: '#fff', width: 'auto', padding: '0 1.5rem' }}>{phase.q}</div>
+                    <div className="pill-number" style={{ background: i === 0 ? 'var(--accent-purple)' : 'var(--text-main)', color: 'var(--bg-main)', width: 'auto', padding: '0 1.5rem' }}>{phase.q}</div>
                     <div style={{ color: 'var(--accent-purple)' }}><Hexagon size={24} /></div>
                  </div>
                  <h3 style={{ fontSize: '2.2rem', fontWeight: 800, marginBottom: '1rem' }}>{phase.title}</h3>

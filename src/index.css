@@ -9,9 +9,22 @@
   --accent-purple: #5d5fef;
   --accent-yellow: #fbbf24;
   --border-subtle: rgba(0, 0, 0, 0.05);
+  --header-bg: rgba(255, 255, 255, 0.85);
   --radius-lg: 3.5rem;
   --radius-md: 1.5rem;
   --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme='dark'] {
+  --bg-main: #0f172a; /* Deep Blue from image */
+  --bg-card: #1e293b;
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --accent-green: #34d399;
+  --accent-purple: #f5b642; /* Golden Yellow from image used as primary accent */
+  --accent-yellow: #f5b642;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(15, 23, 42, 0.85);
 }
 
 * {
@@ -27,6 +40,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 
@@ -155,7 +169,7 @@ section {
 .avatar-pill {
   display: inline-flex;
   align-items: center;
-  background: #eee;
+  background: var(--border-subtle);
   padding: 0.25rem;
   border-radius: 2rem;
   margin: 0 0.5rem;
@@ -167,7 +181,7 @@ section {
   height: 30px;
   border-radius: 50%;
   margin-right: -10px;
-  border: 2px solid white;
+  border: 2px solid var(--bg-card);
 }
 
 .stat-block {
@@ -219,11 +233,11 @@ section {
 /* Rich Texture Classes */
 .bg-grid {
   background-size: 40px 40px;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--border-subtle) 1px, transparent 1px);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #000 0%, var(--accent-purple) 100%);
+  background: linear-gradient(135deg, var(--text-main) 0%, var(--accent-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -235,7 +249,7 @@ section {
 
 .feature-pill {
   padding: 0.5rem 1.25rem;
-  background: #eee;
+  background: var(--border-subtle);
   border-radius: 2rem;
   font-size: 0.8rem;
   font-weight: 700;
@@ -244,6 +258,7 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--text-main);
 }
 
 /* Utilities */

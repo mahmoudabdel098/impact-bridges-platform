@@ -23,7 +23,7 @@ const Impact = () => {
                   Gli Enti del Terzo Settore (ETS) di Milano sono la linfa vitale del nostro territorio. ImpactBridges non è solo uno strumento per le aziende, ma un acceleratore di visibilità e risorse per chi opera ogni giorno nel sociale. Aiutiamo le ETS a passare dal "bisogno" al "progetto", rendendo il loro impatto leggibile per il mercato corporate.
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
-                   <div className="main-card" style={{ padding: '2rem', background: '#f9f9f9' }}>
+                   <div className="main-card" style={{ padding: '2rem', background: 'var(--bg-main)' }}>
                       <Database className="accent-text" size={32} style={{ marginBottom: '1rem' }} />
                       <h4 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.5rem' }}>Accesso Risorse</h4>
                       <p className="text-muted" style={{ fontSize: '0.85rem' }}>Connettiamo i tuoi progetti con le strategie CSR delle grandi imprese milanesi.</p>
@@ -35,7 +35,7 @@ const Impact = () => {
                    </div>
                 </div>
               </div>
-              <div style={{ textAlign: 'center', background: '#f8f9fb', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ textAlign: 'center', background: 'var(--bg-main)', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                  <img 
                    src={cameraImg} 
                    alt="Impact Camera" 
@@ -48,7 +48,7 @@ const Impact = () => {
       </section>
 
       {/* THE 10 EPISODES - SLIDE 11 */}
-      <section style={{ background: '#f8f9fb' }}>
+      <section style={{ background: 'var(--bg-main)', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="content-box">
           <div className="flex-between" style={{ marginBottom: '5rem' }}>
             <div>
@@ -67,7 +67,7 @@ const Impact = () => {
               { t: 'Salute & Comunità', d: 'Presidi di prossimità per le fasce fragili.' },
               { t: 'Cultura Diffusa', d: 'Arte e teatro come strumenti di coesione sociale.' }
             ].map((item, i) => (
-              <div key={i} className="main-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid rgba(0,0,0,0.03)', background: '#fff' }}>
+              <div key={i} className="main-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid var(--border-subtle)', background: 'var(--bg-card)' }}>
                 <div style={{ height: '200px', background: i % 3 === 0 ? 'var(--accent-purple)' : i % 3 === 1 ? '#000' : 'var(--accent-green)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                    <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', background: 'rgba(255,255,255,0.15)', color: '#fff', padding: '0.4rem 1.2rem', borderRadius: '2rem', fontSize: '0.75rem', fontWeight: 800 }}>EPISODIO 0{i+1}</div>
                    <Video color="#fff" size={40} style={{ opacity: 0.2 }} />
@@ -98,7 +98,7 @@ const Impact = () => {
                      Abbiamo mappato meticolosamente le prime 10 ETS a Milano pronte per l'attivazione di partnership strategiche. Ogni punto sulla mappa rappresenta un'opportunità di valore per il territorio e per la tua azienda.
                    </p>
                     <div style={{ display: 'flex', gap: '1.5rem' }}>
-                       <Link to="/services" className="nav-btn" style={{ background: '#fff', color: '#000', padding: '1.5rem 3.5rem', fontWeight: 800, textDecoration: 'none' }}>Esplora Ecosistema</Link>
+                       <Link to="/services" className="nav-btn" style={{ background: 'var(--text-main)', color: 'var(--bg-main)', padding: '1.5rem 3.5rem', fontWeight: 800, textDecoration: 'none' }}>Esplora Ecosistema</Link>
                        <Link to="/contacts" className="nav-btn" style={{ border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '1.5rem 3.5rem', textDecoration: 'none' }}>Criteri di Selezione</Link>
                     </div>
                 </div>

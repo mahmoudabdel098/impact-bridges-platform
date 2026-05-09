@@ -42,7 +42,7 @@ const Home = () => {
             
             <div style={{ position: 'relative' }}>
                 <div style={{ 
-                  background: 'linear-gradient(135deg, #fff 0%, #f0f0f0 100%)', 
+                  background: 'var(--bg-card)', 
                   padding: '1rem', borderRadius: '4rem', 
                   boxShadow: '0 80px 150px rgba(0,0,0,0.1)',
                   border: '1px solid rgba(0,0,0,0.05)',

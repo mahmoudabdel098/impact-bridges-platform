@@ -37,7 +37,7 @@ const Services = () => {
       </section>
 
       {/* DELIVERABLES - SLIDE 10, 12, 13 */}
-      <section style={{ background: '#f8f9fb' }}>
+      <section style={{ background: 'var(--bg-main)', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="content-box">
           <div className="grid-2" style={{ gap: '6rem' }}>
             <div>
@@ -47,21 +47,21 @@ const Services = () => {
               </p>
               
               <div className="pill-list" style={{ gap: '2rem' }}>
-                <div className="pill-item" style={{ background: '#fff', padding: '2rem' }}>
+                <div className="pill-item" style={{ background: 'var(--bg-card)', padding: '2rem' }}>
                   <div className="pill-number" style={{ background: 'var(--accent-purple)', color: '#fff' }}><Play size={18} /></div>
                   <div>
                     <h4 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>Video-Reportage</h4>
                     <p className="text-muted" style={{ fontSize: '0.95rem' }}>Produzione cinematografica HD che documenta l'incontro tra azienda e progetto sociale. Un racconto autentico senza filtri pubblicitari.</p>
                   </div>
                 </div>
-                <div className="pill-item" style={{ background: '#fff', padding: '2rem' }}>
+                <div className="pill-item" style={{ background: 'var(--bg-card)', padding: '2rem' }}>
                   <div className="pill-number" style={{ background: '#000', color: '#fff' }}><BarChart3 size={18} /></div>
                   <div>
                     <h4 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>Narrative Impact Report</h4>
                     <p className="text-muted" style={{ fontSize: '0.95rem' }}>Un documento che intreccia dati di impatto granulari con storie umane, perfetto per integrare il bilancio di sostenibilità (ESG).</p>
                   </div>
                 </div>
-                <div className="pill-item" style={{ background: '#fff', padding: '2rem' }}>
+                <div className="pill-item" style={{ background: 'var(--bg-card)', padding: '2rem' }}>
                   <div className="pill-number" style={{ background: 'var(--accent-green)', color: '#000' }}><Users size={18} /></div>
                   <div>
                     <h4 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>Dialogue Table Format</h4>
@@ -93,7 +93,7 @@ const Services = () => {
       {/* MARKET CONTEXT - SLIDE 9 */}
       <section>
         <div className="content-box">
-          <div className="main-card bg-grid" style={{ background: '#fff', color: '#000', textAlign: 'center', padding: '8rem 4rem' }}>
+          <div className="main-card bg-grid" style={{ background: 'var(--bg-card)', color: 'var(--text-main)', textAlign: 'center', padding: '8rem 4rem' }}>
             <h2 style={{ fontSize: '4.5rem', fontWeight: 950, marginBottom: '3rem', lineHeight: 1 }}>Il Mercato ESG a Milano.</h2>
             <p className="text-muted" style={{ fontSize: '1.4rem', opacity: 0.8, maxWidth: '900px', margin: '0 auto 4rem', lineHeight: 1.6 }}>
               Milano è l'epicentro della trasformazione sostenibile in Italia. Le aziende che sanno connettersi oggi con il territorio attraverso partnership sincere saranno i leader di domani nella creazione di valore condiviso. ImpactBridges è la chiave per entrare in questa nuova era.
