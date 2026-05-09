@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
-    <div style={{ paddingTop: '8rem' }}>
+    <div style={{ paddingTop: '8rem', position: 'relative' }}>
+      <div className="bg-glow" style={{ bottom: '0', left: '0', opacity: 0.06 }} />
       {/* TECHNOLOGY OF DIALOGUE - SLIDE 5 & 6 */}
       <section>
         <div className="content-box">

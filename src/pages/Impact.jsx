@@ -8,7 +8,8 @@ const Impact = () => {
   const globeImg = "/assets/globe.png";
 
   return (
-    <div style={{ paddingTop: '8rem' }}>
+    <div style={{ paddingTop: '8rem', position: 'relative' }}>
+      <div className="bg-glow" style={{ top: '10%', left: '50%', transform: 'translateX(-50%)', opacity: 0.05 }} />
       {/* ETS FOCUS - SLIDE 8 & 14 */}
       <section>
         <div className="content-box">

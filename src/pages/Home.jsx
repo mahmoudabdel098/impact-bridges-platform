@@ -17,8 +17,9 @@ const Home = () => {
     <div>
       {/* HERO SECTION - 100VH IMPACT */}
       <section style={{ height: '100vh', padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center' }}>
-        <div className="bg-glow" style={{ top: '-10%', left: '-10%' }} />
-        <div className="bg-glow" style={{ bottom: '-10%', right: '-10%', opacity: 0.05 }} />
+        <div className="bg-glow" style={{ top: '-20%', left: '-20%', opacity: 0.08 }} />
+        <div className="bg-glow" style={{ bottom: '-20%', right: '-20%', opacity: 0.06, animationDelay: '-5s' }} />
+        <div className="bg-glow" style={{ top: '30%', left: '40%', width: '400px', height: '400px', opacity: 0.03, animationDelay: '-10s' }} />
         <div className="content-box" style={{ width: '100%', position: 'relative', zIndex: 1 }}>
           <div className="grid-2" style={{ alignItems: 'center' }}>
             <motion.div

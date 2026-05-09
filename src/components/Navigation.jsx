@@ -29,9 +29,10 @@ export const Navigation = () => {
       <header style={{ 
         position: 'fixed', top: '1.5rem', left: '1.5rem', right: '1.5rem', 
         zIndex: 1000, display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        padding: '0.75rem 1.5rem', background: 'var(--header-bg)', backdropFilter: 'blur(15px)',
+        padding: '0.8rem 2rem', background: 'var(--header-bg)', 
+        backdropFilter: 'blur(24px) saturate(180%)',
         borderRadius: '5rem', border: '1px solid var(--border-subtle)',
-        boxShadow: '0 20px 40px rgba(0,0,0,0.03)',
+        boxShadow: '0 20px 60px rgba(0,0,0,0.2)',
         width: 'calc(100% - 3rem)'
       }}>
         <div style={{ display: 'flex', gap: 'clamp(1rem, 3vw, 3rem)', alignItems: 'center', flexShrink: 0 }}>

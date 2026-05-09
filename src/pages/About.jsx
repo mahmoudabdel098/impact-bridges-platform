@@ -6,7 +6,8 @@ const About = () => {
   const identityImg = "/assets/identity.png";
 
   return (
-    <div style={{ paddingTop: '8rem' }}>
+    <div style={{ paddingTop: '8rem', position: 'relative' }}>
+      <div className="bg-glow" style={{ top: '0', right: '0', opacity: 0.08 }} />
       {/* IDENTITY - SLIDE 1 & 17 */}
       <section>
         <div className="content-box">
@@ -107,7 +108,7 @@ const About = () => {
       <section>
         <div className="content-box">
           <div className="flex-between" style={{ marginBottom: '5rem' }}>
-            <h2 className="text-huge" style={{ fontSize: '5rem' }}>Evoluzione.</h2>
+            <h2 className="text-huge glow-text" style={{ fontSize: '5rem' }}>Evoluzione.</h2>
             <div className="feature-pill">
                <Milestone size={14} /> Tappe Strategiche
             </div>
