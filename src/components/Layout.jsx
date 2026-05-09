@@ -65,6 +65,7 @@ const Layout = ({ children }) => {
   return (
     <div className="cinematic-container">
       <div className="noise-overlay" />
+      <div className="cinematic-line" />
       <Navigation />
       <main style={{ minHeight: '100vh' }}>
         <AnimatePresence mode="wait">

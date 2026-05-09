@@ -12,7 +12,7 @@ const Impact = () => {
       {/* ETS FOCUS - SLIDE 8 & 14 */}
       <section>
         <div className="content-box">
-          <h1 className="text-huge" style={{ marginBottom: '4rem' }}>Impatto Reale.<br /><span className="text-muted">Dati, non promesse.</span></h1>
+          <h1 className="text-huge" style={{ marginBottom: '4rem' }}>Impatto Reale.<br /><span className="accent-text glow-text">Dati, non promesse.</span></h1>
           
           <div className="main-card bg-grid" style={{ padding: '0' }}>
             <div className="grid-2" style={{ alignItems: 'center' }}>
@@ -28,7 +28,7 @@ const Impact = () => {
                       <h4 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.5rem' }}>Accesso Risorse</h4>
                       <p className="text-muted" style={{ fontSize: '0.85rem' }}>Connettiamo i tuoi progetti con le strategie CSR delle grandi imprese milanesi.</p>
                    </div>
-                   <div className="main-card" style={{ padding: '2rem', background: '#f9f9f9' }}>
+                   <div className="main-card" style={{ padding: '2rem', background: 'var(--bg-card)' }}>
                       <HeartHandshake className="accent-text" size={32} style={{ marginBottom: '1rem' }} />
                       <h4 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.5rem' }}>Dialogue Table</h4>
                       <p className="text-muted" style={{ fontSize: '0.85rem' }}>Entra in tavoli di co-progettazione dove il tuo valore viene riconosciuto e amplificato.</p>
@@ -52,10 +52,10 @@ const Impact = () => {
         <div className="content-box">
           <div className="flex-between" style={{ marginBottom: '5rem' }}>
             <div>
-               <h2 className="text-huge" style={{ fontSize: '5rem' }}>Le 10 Puntate.</h2>
+               <h2 className="text-huge glow-text" style={{ fontSize: '5rem' }}>Le 10 Puntate.</h2>
                <p className="text-muted" style={{ fontSize: '1.2rem', marginTop: '1rem' }}>Un viaggio narrativo attraverso 10 storie di eccellenza sociale a Milano.</p>
             </div>
-            <div className="feature-pill" style={{ background: '#000', color: '#fff' }}>STAGIONE 2026</div>
+            <div className="feature-pill" style={{ background: 'var(--text-main)', color: 'var(--bg-main)' }}>STAGIONE 2026</div>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem' }}>
@@ -68,7 +68,7 @@ const Impact = () => {
               { t: 'Cultura Diffusa', d: 'Arte e teatro come strumenti di coesione sociale.' }
             ].map((item, i) => (
               <div key={i} className="main-card" style={{ padding: 0, overflow: 'hidden', border: '1px solid var(--border-subtle)', background: 'var(--bg-card)' }}>
-                <div style={{ height: '200px', background: i % 3 === 0 ? 'var(--accent-purple)' : i % 3 === 1 ? '#000' : 'var(--accent-green)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ height: '200px', background: i % 3 === 0 ? 'var(--accent-purple)' : i % 3 === 1 ? 'var(--text-main)' : 'var(--accent-green)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                    <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', background: 'rgba(255,255,255,0.15)', color: '#fff', padding: '0.4rem 1.2rem', borderRadius: '2rem', fontSize: '0.75rem', fontWeight: 800 }}>EPISODIO 0{i+1}</div>
                    <Video color="#fff" size={40} style={{ opacity: 0.2 }} />
                 </div>
@@ -90,16 +90,16 @@ const Impact = () => {
       {/* THE MAP - SLIDE 7 & 15 */}
       <section>
         <div className="content-box">
-          <div className="main-card" style={{ background: '#000', color: '#fff', padding: '8rem 4rem', borderRadius: '4rem', overflow: 'hidden', position: 'relative' }}>
+          <div className="main-card" style={{ background: 'var(--text-main)', color: 'var(--bg-main)', padding: '8rem 4rem', borderRadius: '4rem', overflow: 'hidden', position: 'relative' }}>
              <div className="grid-2" style={{ alignItems: 'center', position: 'relative', zIndex: 2 }}>
                 <div>
-                   <h2 style={{ fontSize: '4.5rem', fontWeight: 950, marginBottom: '2.5rem', lineHeight: 1 }}>La Mappa <br />dell'Impatto.</h2>
+                   <h2 className="glow-text" style={{ fontSize: '4.5rem', fontWeight: 950, marginBottom: '2.5rem', lineHeight: 1 }}>La Mappa <br />dell'Impatto.</h2>
                    <p style={{ fontSize: '1.4rem', opacity: 0.6, maxWidth: '550px', marginBottom: '3.5rem', lineHeight: 1.6 }}>
                      Abbiamo mappato meticolosamente le prime 10 ETS a Milano pronte per l'attivazione di partnership strategiche. Ogni punto sulla mappa rappresenta un'opportunità di valore per il territorio e per la tua azienda.
                    </p>
                     <div style={{ display: 'flex', gap: '1.5rem' }}>
                        <Link to="/services" className="nav-btn" style={{ background: 'var(--text-main)', color: 'var(--bg-main)', padding: '1.5rem 3.5rem', fontWeight: 800, textDecoration: 'none' }}>Esplora Ecosistema</Link>
-                       <Link to="/contacts" className="nav-btn" style={{ border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '1.5rem 3.5rem', textDecoration: 'none' }}>Criteri di Selezione</Link>
+                       <Link to="/contacts" className="nav-btn" style={{ border: '1px solid var(--border-subtle)', color: 'var(--bg-main)', padding: '1.5rem 3.5rem', textDecoration: 'none' }}>Criteri di Selezione</Link>
                     </div>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -111,7 +111,7 @@ const Impact = () => {
                 </div>
              </div>
              {/* Background branding */}
-             <div style={{ position: 'absolute', bottom: '-5rem', right: '-5rem', fontSize: '20rem', fontWeight: 950, opacity: 0.05, pointerEvents: 'none' }}>MAP</div>
+             <div style={{ position: 'absolute', bottom: '-5rem', right: '-5rem', fontSize: '20rem', fontWeight: 950, opacity: 0.02, pointerEvents: 'none', color: 'var(--bg-main)' }}>MAP</div>
           </div>
         </div>
       </section>

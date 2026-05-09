@@ -16,15 +16,15 @@
 }
 
 [data-theme='dark'] {
-  --bg-main: #050810; /* Richer, darker blue-black */
-  --bg-card: #0f172a; /* Card background slightly lighter */
-  --text-main: #ffffff;
+  --bg-main: #020617; /* Midnight Black */
+  --bg-card: #0f172a; /* Slate Blue Card */
+  --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --accent-green: #10b981;
-  --accent-purple: #f5b642; /* Golden Yellow */
-  --accent-yellow: #f5b642;
-  --border-subtle: rgba(255, 255, 255, 0.1);
-  --header-bg: rgba(5, 8, 16, 0.9);
+  --accent-purple: #f59e0b; /* Warmer Golden Yellow */
+  --accent-yellow: #f59e0b;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --header-bg: rgba(2, 6, 23, 0.8);
 }
 
 * {
@@ -61,6 +61,23 @@ body {
 .cinematic-container {
   position: relative;
   width: 100%;
+}
+
+.cinematic-line {
+  position: fixed;
+  left: 2.5rem;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: var(--border-subtle);
+  z-index: 50;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .cinematic-line {
+    left: 1rem;
+  }
 }
 
 section {
@@ -107,13 +124,18 @@ section {
   position: relative;
   overflow: hidden;
   transition: var(--transition-smooth);
-  border: 1px solid transparent;
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(10px);
 }
 
 .main-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.08);
-  border-color: rgba(93, 95, 239, 0.2);
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 50px 120px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-purple);
+}
+
+[data-theme='dark'] .main-card:hover {
+  box-shadow: 0 0 50px rgba(245, 158, 11, 0.1);
 }
 
 .text-huge {
@@ -257,6 +279,24 @@ section {
   align-items: center;
   gap: 0.5rem;
   color: var(--text-main);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Premium Glow Effects */
+.glow-text {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.bg-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%);
+  opacity: 0.03;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Utilities */

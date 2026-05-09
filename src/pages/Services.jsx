@@ -10,7 +10,7 @@ const Services = () => {
       <section>
         <div className="content-box">
           <div className="flex-between" style={{ marginBottom: '4rem', alignItems: 'flex-end' }}>
-            <h1 className="text-huge">Tecnologia<br /><span className="gradient-text">del Dialogo.</span></h1>
+            <h1 className="text-huge">Tecnologia<br /><span className="accent-text glow-text">del Dialogo.</span></h1>
             <p className="text-muted" style={{ maxWidth: '400px', fontSize: '1.1rem', textAlign: 'right' }}>
                Il nostro metodo proprietario per costruire ponti indistruttibili tra Profit e Non-Profit.
             </p>

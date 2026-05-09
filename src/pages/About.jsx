@@ -16,7 +16,7 @@ const About = () => {
               animate={{ opacity: 1, x: 0 }}
               className="text-huge"
             >
-              Architettura<br /><span className="gradient-text">dell'Impatto.</span>
+              Architettura<br /><span className="accent-text glow-text">dell'Impatto.</span>
             </motion.h1>
             <div className="feature-pill" style={{ marginTop: '1rem' }}>
                <Info size={14} /> Structure & Governance

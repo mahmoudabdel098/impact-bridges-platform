@@ -17,7 +17,9 @@ const Home = () => {
     <div>
       {/* HERO SECTION - 100VH IMPACT */}
       <section style={{ height: '100vh', padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center' }}>
-        <div className="content-box" style={{ width: '100%' }}>
+        <div className="bg-glow" style={{ top: '-10%', left: '-10%' }} />
+        <div className="bg-glow" style={{ bottom: '-10%', right: '-10%', opacity: 0.05 }} />
+        <div className="content-box" style={{ width: '100%', position: 'relative', zIndex: 1 }}>
           <div className="grid-2" style={{ alignItems: 'center' }}>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -29,7 +31,7 @@ const Home = () => {
               </div>
               <h1 className="text-huge" style={{ lineHeight: 0.9, marginBottom: '2rem' }}>
                 IMPACT<br />
-                <span className="gradient-text">BRIDGES.</span>
+                <span className="accent-text glow-text">BRIDGES.</span>
               </h1>
               <p className="text-muted" style={{ fontSize: '1.4rem', maxWidth: '550px', marginBottom: '3rem', lineHeight: '1.4' }}>
                 Il primo ecosistema a Milano che trasforma la responsabilità sociale in asset strategico attraverso la narrazione cinematografica e il dialogo strutturato.
@@ -42,13 +44,10 @@ const Home = () => {
             
             <div style={{ position: 'relative' }}>
                 <div style={{ 
-                  background: 'var(--bg-card)', 
-                  padding: '1rem', borderRadius: '4rem', 
-                  boxShadow: '0 80px 150px rgba(0,0,0,0.1)',
-                  border: '1px solid rgba(0,0,0,0.05)',
-                  transform: 'rotate(-2deg)'
+                  transform: 'rotate(-2deg)',
+                  zIndex: 1
                 }}>
-                  <img src={heroImg} alt="Abstract Bridge" style={{ width: '100%', height: 'auto', maxHeight: '60vh', objectFit: 'contain', borderRadius: '3rem' }} />
+                  <img src={heroImg} alt="Abstract Bridge" style={{ width: '100%', height: 'auto', maxHeight: '70vh', objectFit: 'contain' }} />
                 </div>
               <div className="main-card desktop-only" 
                 style={{ 
@@ -109,10 +108,11 @@ const Home = () => {
         <div className="content-box">
            <div className="grid-2" style={{ alignItems: 'center' }}>
               <div style={{ position: 'relative' }}>
+                 <div className="bg-glow" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', opacity: 0.1 }} />
                  <motion.img 
                    src={cameraImg} 
                    alt="Storytelling" 
-                   style={{ width: '90%', filter: 'drop-shadow(0 0 50px rgba(255,255,255,0.1))' }}
+                   style={{ width: '90%', position: 'relative', zIndex: 1, filter: 'drop-shadow(0 0 50px rgba(255,255,255,0.05))' }}
                  />
               </div>
               <div>
@@ -139,8 +139,9 @@ const Home = () => {
       {/* THE 17 SECTIONS SUMMARY - SLIDE 1 & 17 */}
       <section style={{ background: 'var(--bg-main)', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="content-box">
-          <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
-             <h2 className="text-huge" style={{ fontSize: '6rem' }}>Vision 2026.</h2>
+          <div style={{ textAlign: 'center', marginBottom: '6rem', position: 'relative' }}>
+             <h2 className="text-huge" style={{ fontSize: '8rem', opacity: 0.03, position: 'absolute', top: '-2rem', left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', zIndex: 0 }}>2026 ROADMAP</h2>
+             <h2 className="text-huge glow-text" style={{ fontSize: '6rem', position: 'relative', zIndex: 1 }}>Vision 2026.</h2>
              <p className="text-muted" style={{ fontSize: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
                 Un percorso strutturato in 17 tappe per trasformare il modo in cui Milano pensa l'impatto sociale.
              </p>
