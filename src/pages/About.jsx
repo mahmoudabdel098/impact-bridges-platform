@@ -32,7 +32,7 @@ const About = () => {
               </p>
             </div>
             <div className="main-card bg-grid" style={{ padding: '4rem' }}>
-              <div className="pill-number" style={{ marginBottom: '2rem', background: 'var(--accent-purple)', color: '#fff' }}><Play size={24} /></div>
+              <div className="pill-number" style={{ marginBottom: '2rem', background: 'var(--accent-purple)', color: 'var(--bg-main)' }}><Play size={24} /></div>
               <h3 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>Impact Story360</h3>
               <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
                 Il brand narrativo e la "factory" creativa. Impact Story360 si occupa di catturare l'anima dei progetti attraverso il reportage cinematografico. Non facciamo pubblicità: documentiamo la realtà del Terzo Settore intrecciandola con le strategie di sostenibilità delle aziende partner.

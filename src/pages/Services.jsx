@@ -25,7 +25,7 @@ const Services = () => {
             ].map((step, i) => (
               <div key={i} className="main-card bg-grid" style={{ padding: '3rem 2rem', minHeight: '400px', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2rem' }}>
-                   <div className="pill-number" style={{ background: '#000', color: '#fff' }}>{step.num}</div>
+                   <div className="pill-number" style={{ background: 'var(--text-main)', color: 'var(--bg-main)' }}>{step.num}</div>
                    <div className="accent-text">{step.icon}</div>
                 </div>
                 <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: '1.5rem' }}>{step.title}</h3>
@@ -48,21 +48,21 @@ const Services = () => {
               
               <div className="pill-list" style={{ gap: '2rem' }}>
                 <div className="pill-item" style={{ background: 'var(--bg-card)', padding: '2rem' }}>
-                  <div className="pill-number" style={{ background: 'var(--accent-purple)', color: '#fff' }}><Play size={18} /></div>
+                   <div className="pill-number" style={{ background: 'var(--accent-purple)', color: 'var(--bg-main)' }}><Play size={18} /></div>
                   <div>
                     <h4 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>Video-Reportage</h4>
                     <p className="text-muted" style={{ fontSize: '0.95rem' }}>Produzione cinematografica HD che documenta l'incontro tra azienda e progetto sociale. Un racconto autentico senza filtri pubblicitari.</p>
                   </div>
                 </div>
                 <div className="pill-item" style={{ background: 'var(--bg-card)', padding: '2rem' }}>
-                  <div className="pill-number" style={{ background: '#000', color: '#fff' }}><BarChart3 size={18} /></div>
+                   <div className="pill-number" style={{ background: 'var(--text-main)', color: 'var(--bg-main)' }}><BarChart3 size={18} /></div>
                   <div>
                     <h4 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>Narrative Impact Report</h4>
                     <p className="text-muted" style={{ fontSize: '0.95rem' }}>Un documento che intreccia dati di impatto granulari con storie umane, perfetto per integrare il bilancio di sostenibilità (ESG).</p>
                   </div>
                 </div>
                 <div className="pill-item" style={{ background: 'var(--bg-card)', padding: '2rem' }}>
-                  <div className="pill-number" style={{ background: 'var(--accent-green)', color: '#000' }}><Users size={18} /></div>
+                   <div className="pill-number" style={{ background: 'var(--accent-green)', color: 'var(--bg-main)' }}><Users size={18} /></div>
                   <div>
                     <h4 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.5rem' }}>Dialogue Table Format</h4>
                     <p className="text-muted" style={{ fontSize: '0.95rem' }}>Workshop di facilitazione che garantiscono che la partnership non sia solo economica, ma generi un reale scambio di competenze.</p>
@@ -71,7 +71,7 @@ const Services = () => {
               </div>
             </div>
             
-            <div className="main-card" style={{ padding: '4rem', background: '#000', color: '#fff', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div className="main-card" style={{ padding: '4rem', background: 'var(--text-main)', color: 'var(--bg-main)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                <h3 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '2.5rem', lineHeight: 1.1 }}>Perché Funziona.</h3>
                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem' }}>
                   {[
