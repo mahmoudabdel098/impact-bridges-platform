@@ -104,19 +104,18 @@ section {
 
 @media (max-width: 1024px) {
   section {
-    padding: 6rem 2rem;
-    min-height: auto; /* Allow content to dictate height if needed, but keep 100vh for hero */
+    padding: 6rem 1.5rem;
+    min-height: auto;
   }
   
-  section[style*="height: 100vh"] {
-    height: auto !important;
-    min-height: 100vh;
-    padding-top: 10rem;
-  }
-
   .grid-2 {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .content-box {
+    padding: 0 1rem;
   }
 }
 
@@ -326,6 +325,36 @@ section {
   align-items: center;
 }
 
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 1024px) {
   .grid-2 {
     grid-template-columns: 1fr;
@@ -342,52 +371,71 @@ section {
 /* Mobile Refinements */
 @media (max-width: 768px) {
   .text-huge {
-    font-size: 3.5rem;
-    line-height: 1;
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  section {
+    padding: 5rem 1.25rem;
   }
 
   .main-card {
-    padding: 2rem;
+    padding: 2.5rem 1.5rem;
     border-radius: 2rem;
   }
 
   .nav-btn {
     width: 100%;
     text-align: center;
+    padding: 1rem;
   }
 
-  .desktop-only {
-    display: none;
+  .cinematic-line {
+    left: 0.75rem;
   }
 
-  /* Ensure 3D images center on mobile */
-  img[src*="/assets/"] {
-    width: 100% !important;
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .flex-between {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-
+  /* Header mobile adjustment */
   header {
     top: 1rem !important;
     left: 1rem !important;
     right: 1rem !important;
-    padding: 0.75rem 1.5rem !important;
+    padding: 0.6rem 1.2rem !important;
+    width: calc(100% - 2rem) !important;
   }
 
-  /* Footer adjustments */
-  footer .grid-2 {
-    gap: 3rem;
+  .pill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0;
   }
 
-  footer .grid-2 > div:last-child {
-    grid-template-columns: 1fr !important;
+  .pill-number {
+    margin-right: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .grid-2 {
     gap: 2rem;
+  }
+
+  /* Fix for hero image on mobile */
+  .hero-image-container {
+    margin-top: 2rem;
+    order: -1; /* Image first on mobile hero */
+  }
+
+  .mobile-menu-container {
+    padding: 7rem 1.5rem 3rem !important;
+  }
+
+  .mobile-menu-container h2 {
+    font-size: 2.2rem !important;
+  }
+
+  .mobile-menu-container p {
+    font-size: 1rem !important;
   }
 }

@@ -84,9 +84,11 @@ export const Navigation = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
+            className="mobile-menu-container"
             style={{ 
               position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, 
-              background: 'var(--bg-main)', zIndex: 999, padding: '10rem 4rem 4rem'
+              background: 'var(--bg-main)', zIndex: 999, padding: '10rem 4rem 4rem',
+              overflowY: 'auto'
             }}
           >
             <div className="content-box">

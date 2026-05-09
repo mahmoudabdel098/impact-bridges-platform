@@ -17,7 +17,7 @@ const Services = () => {
             </p>
           </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
+          <div className="grid-4">
             {[
               { num: '01', icon: <Search />, title: 'Scopri', desc: 'Identifichiamo gli Enti del Terzo Settore (ETS) milanesi che operano con trasparenza e impatto reale. Niente brochure: solo progetti verificati.' },
               { num: '02', icon: <Zap />, title: 'Seleziona', desc: 'Costruiamo una shortlist su misura per l\'azienda, allineando i valori del brand con le necessità urgenti del territorio.' },

@@ -43,12 +43,12 @@ const Home = () => {
               </div>
             </motion.div>
             
-            <div style={{ position: 'relative' }}>
+            <div className="hero-image-container" style={{ position: 'relative' }}>
                 <div style={{ 
                   transform: 'rotate(-2deg)',
                   zIndex: 1
                 }}>
-                  <img src={heroImg} alt="Abstract Bridge" style={{ width: '100%', height: 'auto', maxHeight: '70vh', objectFit: 'contain' }} />
+                  <img src={heroImg} alt="Abstract Bridge" style={{ width: '100%', height: 'auto', maxHeight: '50vh', objectFit: 'contain' }} />
                 </div>
               <div className="main-card desktop-only" 
                 style={{ 

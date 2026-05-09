@@ -59,7 +59,7 @@ const Impact = () => {
             <div className="feature-pill" style={{ background: 'var(--text-main)', color: 'var(--bg-main)' }}>STAGIONE 2026</div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem' }}>
+          <div className="grid-3">
             {[
               { t: 'Ambiente Urbano', d: 'Riqualificazione verde nelle periferie milanesi.' },
               { t: 'Inclusione Digitale', d: 'Abbattimento del gap tecnologico per la terza età.' },
