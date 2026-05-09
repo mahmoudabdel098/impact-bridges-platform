@@ -1,16 +1,25 @@
-# React + Vite
+# ImpactBridges Platform 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Il primo ecosistema a Milano che trasforma la responsabilità sociale in asset strategico attraverso la narrazione cinematografica e il dialogo strutturato tra Profit e Non-Profit.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+**[impact-bridges-platform.vercel.app](https://impact-bridges-platform.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- **Frontend**: React + Vite
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Styling**: Vanilla CSS (Modern Brutalist)
+- **Deployment**: Vercel
 
-## React Compiler
+## 🏗️ Architecture
+- **Home**: Strategic overview and 100vh Hero.
+- **About**: Governance details (Brasnext, Impact Story360) and Roadmap 2026.
+- **Services**: "Tecnologia del Dialogo" methodology and concrete deliverables.
+- **Impact**: Detailed ETS benefits, episode guide, and impact mapping.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Vision 2026
+Trasformare il modo in cui Milano pensa l'impatto sociale attraverso un percorso strutturato in 17 tappe, documentando la verità del lavoro sociale intrecciata con la visione aziendale.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+© 2026 ImpactBridges by Brasnext S.r.l.
